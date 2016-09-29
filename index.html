@@ -1,1 +1,15 @@
-Hello World
+<html>
+
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.1/raphael.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script>
+</head>
+
+<body>
+<div id="diagram"></div>
+<script>
+  var diagram = Diagram.parse("A->B: Message");
+  diagram.drawSVG("diagram", {theme: 'hand'});
+</script>
+</body>
